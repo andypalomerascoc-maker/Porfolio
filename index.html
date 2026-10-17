@@ -4,48 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta name="description" content="Cybersecurity and IT portfolio of Andre Y. Palomeras, featuring academic work in digital forensics, security testing, and network architecture.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="stylesheet" href="STYLE.css">
+  <title>Andre Y. Palomeras | Cybersecurity Portfolio</title>
 </head>
 
 <body>
   <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>A</span>ndre <span>P</span>alomeras</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
+  <header id="header">
+    <nav class="header nav-bar" aria-label="Main navigation">
+      <a class="brand" href="#hero" aria-label="Andre Palomeras, home">
+        <span class="brand-mark">AP</span>
+        <span class="brand-name">Andre Palomeras</span>
+      </a>
+      <div class="nav-list">
+        <ul>
+          <li><a href="#services">Focus</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </nav>
+  </header>
   <!-- End Header -->
-
 
   <!-- Hero Section  -->
   <section id="hero">
-
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Andre <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
+    <div class="hero">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> IT STUDENT · CYBERSECURITY &amp; NETWORKING</p>
+        <h1>Building a safer<br><span>connected world.</span></h1>
+        <p class="hero-summary">I'm Andre Y. Palomeras, a 4th-year Information Technology student exploring cybersecurity, digital forensics, and secure network design through hands-on academic projects.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="cta cta-primary">Explore my work <span aria-hidden="true">↘</span></a>
+          <a href="#contact" class="cta cta-secondary">Get in touch</a>
+        </div>
+        <div class="hero-note"><span>01</span> Curious by nature. Security-minded by practice.</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-glow"></div>
+        <div class="visual-grid"></div>
+        <div class="terminal-card">
+          <div class="terminal-bar"><span></span><span></span><span></span><b>FIELD NOTES / 01</b></div>
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">&gt;</span> focus_areas</p>
+            <div class="terminal-line"><span>01</span> Network security</div>
+            <div class="terminal-line"><span>02</span> Digital forensics</div>
+            <div class="terminal-line"><span>03</span> Security testing</div>
+            <p class="terminal-ready"><span></span> LEARNING. TESTING. IMPROVING.</p>
+          </div>
+        </div>
+        <div class="visual-index">CDO / PH</div>
       </div>
     </div>
   </section>
@@ -55,43 +66,28 @@
   <section id="services">
     <div class="services container">
       <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>As a 2nd-year IT student, I can offer services in web development, mobile app development, Basic Programming,
-          I can create basic websites using HTML, CSS, PHP, JS and Bootstrap, as well as develop simple mobile
-          applications using
-          Flutter. Using my knowledge of basic Python and basic Java, I can write a script to automate repititive task 
-          like file management.
-          I have also experience simple Cisco networking 1, allowing me to create or identify an IP address.
-       </p>
+        <p class="eyebrow section-kicker">WHAT I'M WORKING ON</p>
+        <h2 class="section-title">Security, systems<br><span>&amp; investigation.</span></h2>
+        <p class="section-intro">My current focus areas are grounded in practical coursework, guided lab exercises, and team projects.</p>
       </div>
       <div class="service-bottom">
         <div class="service-item">
-          <div class="icon"><img src="assets/web.jpg" /></div>
-          <h2>Web Development</h2>
-          <p>I Design and create a Web System using html for Structure and CSS for design and JS for Function.
-            It includes everything from building the basic structure of a website to adding interactive elements and ensuring a smooth, responsive user experience.
-
-          </p>
+          <div class="service-card-top"><div class="icon"><img src="assets/net.jpg" alt="" /></div><span>01 / NETWORKS</span></div>
+          <h3>Network architecture</h3>
+          <p>Configuring IP addressing, connecting devices, and designing segmented network topologies for academic projects.</p>
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
         <div class="service-item">
-          <div class="icon"><img src="assets/mob.jpg" /></div>
-          <h2>Mobile App Development</h2>
-          <p>I create simple Mobile applications. This include designing interactive user interface
-            and ensure smooth user experience.
-          </p>
+          <div class="service-card-top"><div class="icon"><img src="assets/cyber.jpg" alt="" /></div><span>02 / DEFENSE</span></div>
+          <h3>Security testing</h3>
+          <p>Practicing web application security testing in a controlled lab and learning to recognize common security weaknesses.</p>
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
         <div class="service-item">
-          <div class="icon"><img src="assets/net.jpg" /></div>
-          <h2>Networking</h2>
-
-          <p>I configure an IP Adress of computer. Including connecting computers and devices to share resources and communicate over local or wide area networks.
-          </p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="assets/prog.jpg" /></div>
-          <h2>Programming</h2>
-          <p>I have basic knowledge of Python and java, in Python i can create an simple automative repititive task System.
-            While in java using algorithm to apply them in problem solving.</p>
+          <div class="service-card-top"><div class="icon"><img src="assets/aut.jpg" alt="" /></div><span>03 / FORENSICS</span></div>
+          <h3>Digital forensics</h3>
+          <p>Using Autopsy in an academic case analysis to inspect disk-image artifacts and practice forensic investigation.</p>
+          <span class="card-arrow" aria-hidden="true">↗</span>
         </div>
       </div>
     </div>
@@ -101,93 +97,46 @@
   <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent System<span>Projects</span></h1>
-      </div>
       <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Grading System</h1>
-            <h2>Basic Grading System</h2>
-            <p>This is our last project in 2nd year, 1st Semester. We basic grading system that allows users to add new students,
-              edit existing grades, delete student records, and search student and view overall grades and calculate grades.
-              Including calculating their 1st to 4th  Quarter grades at elementary student.
-             </p>
-          </div>
-          <div class="project-img">
-            <img src="assets/grades.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Sales and Inventory Fake Gold System</h1>
-            <h2>Sales and Inventory Management</h2>
-
-            <p>A system designed to track sales and manage inventory while reducing errors.
-
-            </p>
-          </div>
-          <div class="project-img">
-            <img src="assets/Sales.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Dormmate Flutter project</h1>
-            <h2>Habit tracker</h2>
-            <p>Dormmate is a roommate management app that help students organize chores, split bill, schedules task, and track expense with offline via hive storage
-</p>
-
-          </div>
-          <div class="project-img">
-            <img src="assets/tracker.jpg" alt="img">
-          </div>
-
-        </div>
-
         <div class="projects-header">
-          <h1 class="section-title">Recent Cybersecurity<span>Projects</span></h1>
-          
+          <div>
+            <p class="eyebrow section-kicker">SELECTED ACADEMIC WORK</p>
+            <h2 class="section-title">Projects in<br><span>practice.</span></h2>
+          </div>
+          <p class="projects-intro">A few examples of how I apply what I learn to realistic security and infrastructure challenges.</p>
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Digital Forensics Case Analysis (M57 Patents)</h1>
-            <h2>Autopsy</h2>
-            <p>Using autopsy to conduct an autopsy investigation on the “M57 PATENT" disk image, analyzing system artifacts and carving image and password.
-
-
+            <div class="project-meta"><span>01</span><span>DIGITAL FORENSICS</span></div>
+            <h3>M57 Patents case analysis</h3>
+            <p>Conducted an academic investigation of the M57 Patents disk image with Autopsy, examining system artifacts and practicing file recovery techniques.</p>
+            <div class="project-tags"><span>Autopsy</span><span>Disk image analysis</span><span>Artifact review</span></div>
           </div>
           <div class="project-img">
-            <img src="assets/forensic.jpg" alt="img">
+            <img src="assets/forensic.jpg" alt="Digital forensics analysis project">
           </div>
-
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Ethical Hacking & Penetration Testing</h1>
-            <h2>Security Testing</h2>
-            <p>Performed SQL map  injection attacks against a vulnerable Windows web server to extract database information to identify the username and password.
-</p>
-
+            <div class="project-meta"><span>02</span><span>CONTROLLED LAB</span></div>
+            <h3>Web application security testing</h3>
+            <p>Used SQLmap in a controlled academic lab against a deliberately vulnerable web application to understand SQL injection risks and assess database exposure.</p>
+            <div class="project-tags"><span>SQLmap</span><span>DVWA</span><span>Vulnerability assessment</span></div>
           </div>
           <div class="project-img">
-            <img src="assets/DVWA.jpg" alt="img">
+            <img src="assets/DVWA.jpg" alt="Web application security testing lab">
           </div>
-
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Network Architecture & Security</h1>
-            <h2>Network Topology</h2>
-            <p>Designed and configured the secure network topology for the  Capstone project, ensuring segmented and optimized traffic flow.
-
-</p>
-
+            <div class="project-meta"><span>03</span><span>NETWORK DESIGN</span></div>
+            <h3>Network architecture &amp; security</h3>
+            <p>Designed a segmented network topology for a capstone project, with attention to secure communication and organized traffic flow.</p>
+            <div class="project-tags"><span>Topology</span><span>Segmentation</span><span>Capstone</span></div>
           </div>
           <div class="project-img">
-            <img src="assets/working.jpg" alt="img">
+            <img src="assets/working.jpg" alt="Network architecture project">
           </div>
-
         </div>
         
       </div>
@@ -201,16 +150,15 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img src="assets/Resume.jpg" alt="img">
+          <img src="assets/resu.jpg" alt="Andre Palomeras resume preview">
         </div>
       </div>
       <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>STUDENT</h2>
-        <p>My name is Andre Y. Palomeras, and I am a 4th-year IT student at PHINMA COC, currently learning a basic networking and LINUX, Ubuntu and other 
-          studies for security and also currently learning a system programming for web. im still a student but willing to learn more about this technology world.
-        </p>
-        <a href="#" class="cta">Download Resume</a>
+        <p class="eyebrow section-kicker">A LITTLE ABOUT ME</p>
+        <h2 class="section-title">Driven to understand<br><span>how things work.</span></h2>
+        <p>I’m Andre Y. Palomeras, a 4th-year Information Technology student at PHINMA COC. My studies have led me to explore networking, cybersecurity, and digital forensics through practical class and capstone projects.</p>
+        <p>I’m early in my career and eager to keep learning, contribute to a security-minded team, and grow through real-world experience.</p>
+        <a href="assets/resu.jpg" class="cta cta-primary" download="Andre-Palomeras-Resume.jpg">View my resume <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </section>
@@ -221,31 +169,27 @@
   <section id="contact">
     <div class="contact container">
       <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
+        <p class="eyebrow section-kicker">LET'S CONNECT</p>
+        <h2 class="section-title">Open to learning<br><span>and opportunities.</span></h2>
       </div>
       <div class="contact-items">
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
           <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>09936425260</h2>
-
+            <span class="contact-label">PHONE</span>
+            <a href="tel:+639936425260">+63 993 642 5260</a>
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
           <div class="contact-info">
-            <h1>Email</h1>
-            <h2>andy.palomeras.coc@phinmaed.com</h2>
-            <h2>andrepalomeras@gmail.com</h2>
-          
+            <span class="contact-label">EMAIL</span>
+            <a href="mailto:andrepalomeras123@gmail.com">andrepalomeras123@gmail.com</a>
+            <a href="mailto:andy.palomeras.coc@phinmaed.com">andy.palomeras.coc@phinmaed.com</a>
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
           <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Tibasak, macasandig, xavier compound, zone 3</h2>
+            <span class="contact-label">LOCATION</span>
+            <p>Cagayan de Oro, Philippines</p>
           </div>
         </div>
       </div>
@@ -260,30 +204,25 @@
 
         <h1><span>A</span>ndre <span>P</span>alomeras</h1>
       </div>
-      <h2>This is my Portfolio</h2>
+      <h2>Cybersecurity · Networking · Digital forensics</h2>
       <div class="social-icon">
         <div class="social-item">
-          <a href="https://www.facebook.com/profile.php?id=100090668925196"><img
-              src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" /></a>
+          <a href="https://www.facebook.com/profile.php?id=100090668925196" aria-label="Facebook">Facebook</a>
         </div>
         <div class="social-item">
-          <a href="https://www.instagram.com/kei_yoshinaga?igsh=bXU5cTZvMGlnd2Iy"><img
-              src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" /></a>
+          <a href="https://www.instagram.com/kei_yoshinaga?igsh=bXU5cTZvMGlnd2Iy" aria-label="Instagram">Instagram</a>
         </div>
         <div class="social-item">
-          <a href="https://github.com/"><img
-              src="https://img.icons8.com/?size=100&id=efFfwotdkiU5&format=png&color=000000" /></a>
+          <a href="https://github.com/" aria-label="GitHub">GitHub</a>
         </div>
         <div class="social-item">
-          <a href="https://www.linkedin.com/in/andre-y-palomeras-8b0423350/"><img
-              src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" /></a>
+          <a href="https://www.linkedin.com/in/andre-y-palomeras-8b0423350/" aria-label="LinkedIn">LinkedIn</a>
         </div>
       </div>
-      <p>Copyright © 2020 . All rights reserved</p>
+      <p>© 2026 Andre Y. Palomeras</p>
     </div>
   </section>
   <!-- End Footer -->
-  <script src="./app.js"></script>
 </body>
 
 </html>
